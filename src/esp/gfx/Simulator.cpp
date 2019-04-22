@@ -214,9 +214,9 @@ void Simulator::reset() {
     agent::AgentState::ptr state = agent::AgentState::create();
     sampleRandomAgentState(state);
     agent->setState(*state);
-    LOG(INFO) << "Reset agent i=" << iAgent
-              << " position=" << state->position.transpose()
-              << " rotation=" << state->rotation.transpose();
+    //LOG(INFO) << "Reset agent i=" << iAgent
+    //          << " position=" << state->position.transpose()
+    //         << " rotation=" << state->rotation.transpose();
   }
 }
 
